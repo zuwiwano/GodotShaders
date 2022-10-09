@@ -1,0 +1,1340 @@
+{
+	"connections": [
+		{
+			"from": "graph_3",
+			"from_port": 0,
+			"to": "math",
+			"to_port": 1
+		},
+		{
+			"from": "blend",
+			"from_port": 0,
+			"to": "math",
+			"to_port": 0
+		},
+		{
+			"from": "graph_3",
+			"from_port": 0,
+			"to": "math_4",
+			"to_port": 1
+		},
+		{
+			"from": "math",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 1
+		},
+		{
+			"from": "math_4",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 0
+		},
+		{
+			"from": "graph_2",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 0
+		},
+		{
+			"from": "graph_2",
+			"from_port": 0,
+			"to": "math_4",
+			"to_port": 0
+		},
+		{
+			"from": "blend_2",
+			"from_port": 0,
+			"to": "blend_3",
+			"to_port": 1
+		},
+		{
+			"from": "graph_4",
+			"from_port": 0,
+			"to": "blend_3",
+			"to_port": 0
+		},
+		{
+			"from": "blend_3",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "blend_3",
+			"from_port": 0,
+			"to": "debug",
+			"to_port": 0
+		},
+		{
+			"from": "graph",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 1
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "1344",
+	"node_position": {
+		"x": 0,
+		"y": 0
+	},
+	"nodes": [
+		{
+			"export_paths": {
+				"Godot": "C:/Users/vukma/Documents/DoomAtHome/textures/moving_sly"
+			},
+			"name": "Material",
+			"node_position": {
+				"x": 928,
+				"y": 482
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1,
+					"b": 1,
+					"g": 1,
+					"r": 1,
+					"type": "Color"
+				},
+				"ao": 1,
+				"depth_scale": 0.5,
+				"emission_energy": 1,
+				"flags_transparent": true,
+				"metallic": 0,
+				"normal": 1,
+				"roughness": 1
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "material_dynamic"
+		},
+		{
+			"name": "debug",
+			"node_position": {
+				"x": 848,
+				"y": 297
+			},
+			"parameters": {
+
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "debug"
+		},
+		{
+			"name": "math",
+			"node_position": {
+				"x": -10,
+				"y": 545
+			},
+			"parameters": {
+				"clamp": false,
+				"default_in1": 0,
+				"default_in2": 0,
+				"op": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "math"
+		},
+		{
+			"name": "blend",
+			"node_position": {
+				"x": -557,
+				"y": 601.5
+			},
+			"parameters": {
+				"amount": 0.74,
+				"blend_type": 11
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		},
+		{
+			"name": "math_4",
+			"node_position": {
+				"x": 21,
+				"y": 354
+			},
+			"parameters": {
+				"clamp": false,
+				"default_in1": 0,
+				"default_in2": 0,
+				"op": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "math"
+		},
+		{
+			"name": "blend_2",
+			"node_position": {
+				"x": 253,
+				"y": 348
+			},
+			"parameters": {
+				"amount": 0.5,
+				"blend_type": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		},
+		{
+			"name": "blend_3",
+			"node_position": {
+				"x": 296,
+				"y": 542.5
+			},
+			"parameters": {
+				"amount": 0.5,
+				"blend_type": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		},
+		{
+			"connections": [
+				{
+					"from": "sphere",
+					"from_port": 0,
+					"to": "math_2",
+					"to_port": 1
+				},
+				{
+					"from": "shape_2",
+					"from_port": 0,
+					"to": "math_2",
+					"to_port": 0
+				},
+				{
+					"from": "math_3",
+					"from_port": 0,
+					"to": "gen_outputs",
+					"to_port": 0
+				},
+				{
+					"from": "math_2",
+					"from_port": 0,
+					"to": "translate_2",
+					"to_port": 0
+				},
+				{
+					"from": "translate_2",
+					"from_port": 0,
+					"to": "math_3",
+					"to_port": 1
+				}
+			],
+			"label": "Moon",
+			"longdesc": "",
+			"name": "graph",
+			"node_position": {
+				"x": -871.700012,
+				"y": 731.400024
+			},
+			"nodes": [
+				{
+					"name": "math_3",
+					"node_position": {
+						"x": 229,
+						"y": 921
+					},
+					"parameters": {
+						"clamp": false,
+						"default_in1": 0,
+						"default_in2": 0,
+						"op": 0
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "math"
+				},
+				{
+					"name": "translate_2",
+					"node_position": {
+						"x": -18.5,
+						"y": 980
+					},
+					"parameters": {
+						"translate_x": 0,
+						"translate_y": 0
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"shader_model": {
+						"code": "",
+						"global": "",
+						"inputs": [
+							{
+								"default": "vec4($uv, 0.0, 1.0)",
+								"label": "",
+								"longdesc": "The input image",
+								"name": "i",
+								"shortdesc": "Input",
+								"type": "rgba"
+							}
+						],
+						"instance": "",
+						"longdesc": "Translates its input",
+						"name": "Moon_Position",
+						"outputs": [
+							{
+								"longdesc": "Shows the translated image",
+								"rgba": "$i($uv-vec2($translate_x, $translate_y))",
+								"shortdesc": "Output",
+								"type": "rgba"
+							}
+						],
+						"parameters": [
+							{
+								"control": "P1.x",
+								"default": 0,
+								"label": "Moon_x",
+								"longdesc": "The translation along the X axis",
+								"max": 1,
+								"min": -1,
+								"name": "translate_x",
+								"shortdesc": "Translate.x",
+								"step": 0.005,
+								"type": "float"
+							},
+							{
+								"control": "P1.y",
+								"default": 0,
+								"label": "Moon_y",
+								"longdesc": "The translation along the Y axis",
+								"max": 1,
+								"min": -1,
+								"name": "translate_y",
+								"shortdesc": "Translate.y",
+								"step": 0.005,
+								"type": "float"
+							}
+						],
+						"shortdesc": "Translate"
+					},
+					"type": "shader"
+				},
+				{
+					"name": "math_2",
+					"node_position": {
+						"x": -250,
+						"y": 942
+					},
+					"parameters": {
+						"clamp": false,
+						"default_in1": 0,
+						"default_in2": 0,
+						"op": 0
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "math"
+				},
+				{
+					"name": "shape_2",
+					"node_position": {
+						"x": -548,
+						"y": 994
+					},
+					"parameters": {
+						"edge": 0.24,
+						"radius": 0.17,
+						"shape": 0,
+						"sides": 11
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"shader_model": {
+						"code": "",
+						"global": "float shape_circle(vec2 uv, float sides, float size, float edge) {\n    uv = 2.0*uv-1.0;\n\tedge = max(edge, 1.0e-8);\n    float distance = length(uv);\n    return clamp((1.0-distance/size)/edge, 0.0, 1.0);\n}\n\nfloat shape_polygon(vec2 uv, float sides, float size, float edge) {\n    uv = 2.0*uv-1.0;\n\tedge = max(edge, 1.0e-8);\n    float angle = atan(uv.x, uv.y)+3.14159265359;\n    float slice = 6.28318530718/sides;\n    return clamp((1.0-(cos(floor(0.5+angle/slice)*slice-angle)*length(uv))/size)/edge, 0.0, 1.0);\n}\n\nfloat shape_star(vec2 uv, float sides, float size, float edge) {\n    uv = 2.0*uv-1.0;\n\tedge = max(edge, 1.0e-8);\n    float angle = atan(uv.x, uv.y);\n    float slice = 6.28318530718/sides;\n    return clamp((1.0-(cos(floor(angle*sides/6.28318530718-0.5+2.0*step(fract(angle*sides/6.28318530718), 0.5))*slice-angle)*length(uv))/size)/edge, 0.0, 1.0);\n}\n\nfloat shape_curved_star(vec2 uv, float sides, float size, float edge) {\n    uv = 2.0*uv-1.0;\n\tedge = max(edge, 1.0e-8);\n    float angle = 2.0*(atan(uv.x, uv.y)+3.14159265359);\n    float slice = 6.28318530718/sides;\n    return clamp((1.0-cos(floor(0.5+0.5*angle/slice)*2.0*slice-angle)*length(uv)/size)/edge, 0.0, 1.0);\n}\n\nfloat shape_rays(vec2 uv, float sides, float size, float edge) {\n    uv = 2.0*uv-1.0;\n\tedge = 0.5*max(edge, 1.0e-8)*size;\n\tfloat slice = 6.28318530718/sides;\n    float angle = mod(atan(uv.x, uv.y)+3.14159265359, slice)/slice;\n    return clamp(min((size-angle)/edge, angle/edge), 0.0, 1.0);\n}\n\n",
+						"inputs": [
+							{
+								"default": "1.0",
+								"label": "3:",
+								"longdesc": "An input map that affects the shape size",
+								"name": "radius_map",
+								"shortdesc": "Size map",
+								"type": "f"
+							},
+							{
+								"default": "1.0",
+								"label": "",
+								"longdesc": "An input map that affects the edge width",
+								"name": "edge_map",
+								"shortdesc": "Edge map",
+								"type": "f"
+							}
+						],
+						"instance": "",
+						"longdesc": "Draws a white shape on a black background",
+						"name": "Shape",
+						"outputs": [
+							{
+								"f": "shape_$(shape)($(uv), $(sides), $(radius)*$radius_map($uv), $(edge)*$edge_map($uv))",
+								"longdesc": "Shows a white shape on a black background",
+								"shortdesc": "Output",
+								"type": "f"
+							}
+						],
+						"parameters": [
+							{
+								"default": 0,
+								"label": "",
+								"longdesc": "The type of shape drawn by this node",
+								"name": "shape",
+								"shortdesc": "Shape",
+								"type": "enum",
+								"values": [
+									{
+										"name": "Circle",
+										"value": "circle"
+									},
+									{
+										"name": "Polygon",
+										"value": "polygon"
+									},
+									{
+										"name": "Star",
+										"value": "star"
+									},
+									{
+										"name": "Curved star",
+										"value": "curved_star"
+									},
+									{
+										"name": "Rays",
+										"value": "rays"
+									}
+								]
+							},
+							{
+								"control": "None",
+								"default": 3,
+								"label": "Sides",
+								"longdesc": "The number of sides of the generated shape (unused for Circle)",
+								"max": 32,
+								"min": 2,
+								"name": "sides",
+								"shortdesc": "Sides count",
+								"step": 1,
+								"type": "float"
+							},
+							{
+								"control": "None",
+								"default": 1,
+								"label": "Radius",
+								"longdesc": "The size of the generated shape",
+								"max": 1,
+								"min": 0,
+								"name": "radius",
+								"shortdesc": "Shape size",
+								"step": 0.01,
+								"type": "float"
+							},
+							{
+								"control": "None",
+								"default": 0.2,
+								"label": "",
+								"longdesc": "The edge width of the generated shape",
+								"max": 1,
+								"min": 0,
+								"name": "edge",
+								"shortdesc": "Edge width",
+								"step": 0.01,
+								"type": "float"
+							}
+						]
+					},
+					"type": "shader"
+				},
+				{
+					"name": "sphere",
+					"node_position": {
+						"x": -551,
+						"y": 1185
+					},
+					"parameters": {
+						"cx": 0.5,
+						"cy": 0.5,
+						"r": 0.19
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "sphere"
+				},
+				{
+					"name": "gen_inputs",
+					"node_position": {
+						"x": -1051,
+						"y": 1004.400024
+					},
+					"parameters": {
+
+					},
+					"ports": [
+
+					],
+					"seed": 0,
+					"seed_locked": false,
+					"type": "ios"
+				},
+				{
+					"name": "gen_outputs",
+					"node_position": {
+						"x": 529,
+						"y": 1004.400024
+					},
+					"parameters": {
+
+					},
+					"ports": [
+						{
+							"name": "port0",
+							"type": "f"
+						}
+					],
+					"seed": 0,
+					"seed_locked": false,
+					"type": "ios"
+				},
+				{
+					"name": "gen_parameters",
+					"node_position": {
+						"x": -427.700012,
+						"y": 621
+					},
+					"parameters": {
+
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "remote",
+					"widgets": [
+
+					]
+				}
+			],
+			"parameters": {
+
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"shortdesc": "",
+			"type": "graph"
+		},
+		{
+			"connections": [
+				{
+					"from": "scale",
+					"from_port": 0,
+					"to": "colorize",
+					"to_port": 0
+				},
+				{
+					"from": "translate",
+					"from_port": 0,
+					"to": "scale",
+					"to_port": 0
+				},
+				{
+					"from": "colorize",
+					"from_port": 0,
+					"to": "gen_outputs",
+					"to_port": 0
+				},
+				{
+					"from": "fbm2_2",
+					"from_port": 0,
+					"to": "colorize_2",
+					"to_port": 0
+				},
+				{
+					"from": "colorize_2",
+					"from_port": 0,
+					"to": "translate",
+					"to_port": 0
+				}
+			],
+			"label": "Clouds",
+			"longdesc": "",
+			"name": "graph_2",
+			"node_position": {
+				"x": -930.656067,
+				"y": 50.375999
+			},
+			"nodes": [
+				{
+					"name": "colorize_2",
+					"node_position": {
+						"x": -1179.140015,
+						"y": 162.440002
+					},
+					"parameters": {
+						"gradient": {
+							"interpolation": 1,
+							"points": [
+								{
+									"a": 1,
+									"b": 0.71875,
+									"g": 0.699097,
+									"pos": 0.154545,
+									"r": 0.704778
+								},
+								{
+									"a": 1,
+									"b": 0.355148,
+									"g": 0.355148,
+									"pos": 0.463636,
+									"r": 0.371094
+								},
+								{
+									"a": 1,
+									"b": 0.058594,
+									"g": 0.027924,
+									"pos": 0.936363,
+									"r": 0.038227
+								},
+								{
+									"a": 1,
+									"b": 0.234375,
+									"g": 0.03479,
+									"pos": 1,
+									"r": 0.092483
+								}
+							],
+							"type": "Gradient"
+						}
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "colorize"
+				},
+				{
+					"name": "fbm2_2",
+					"node_position": {
+						"x": -1405.140015,
+						"y": -107.059998
+					},
+					"parameters": {
+						"folds": 0,
+						"iterations": 3,
+						"noise": 9,
+						"offset": 0.16,
+						"persistence": 0.7,
+						"scale_x": 15,
+						"scale_y": 15
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"shader_model": {
+						"code": "",
+						"global": "float fbm_value(vec2 coord, vec2 size, float offset, float seed) {\n\tvec2 o = floor(coord)+rand2(vec2(seed, 1.0-seed))+size;\n\tvec2 f = fract(coord);\n\tfloat p00 = rand(mod(o, size));\n\tfloat p01 = rand(mod(o + vec2(0.0, 1.0), size));\n\tfloat p10 = rand(mod(o + vec2(1.0, 0.0), size));\n\tfloat p11 = rand(mod(o + vec2(1.0, 1.0), size));\n\tp00 = sin(p00 * 6.28318530718 + offset * 6.28318530718) / 2.0 + 0.5;\n\tp01 = sin(p01 * 6.28318530718 + offset * 6.28318530718) / 2.0 + 0.5;\n\tp10 = sin(p10 * 6.28318530718 + offset * 6.28318530718) / 2.0 + 0.5;\n\tp11 = sin(p11 * 6.28318530718 + offset * 6.28318530718) / 2.0 + 0.5;\n\tvec2 t =  f * f * f * (f * (f * 6.0 - 15.0) + 10.0);\n\treturn mix(mix(p00, p10, t.x), mix(p01, p11, t.x), t.y);\n}\n\nfloat fbm_perlin(vec2 coord, vec2 size, float offset, float seed) {\n\tvec2 o = floor(coord)+rand2(vec2(seed, 1.0-seed))+size;\n\tvec2 f = fract(coord);\n\tfloat a00 = rand(mod(o, size)) * 6.28318530718 + offset * 6.28318530718;\n\tfloat a01 = rand(mod(o + vec2(0.0, 1.0), size)) * 6.28318530718 + offset * 6.28318530718;\n\tfloat a10 = rand(mod(o + vec2(1.0, 0.0), size)) * 6.28318530718 + offset * 6.28318530718;\n\tfloat a11 = rand(mod(o + vec2(1.0, 1.0), size)) * 6.28318530718 + offset * 6.28318530718;\n\tvec2 v00 = vec2(cos(a00), sin(a00));\n\tvec2 v01 = vec2(cos(a01), sin(a01));\n\tvec2 v10 = vec2(cos(a10), sin(a10));\n\tvec2 v11 = vec2(cos(a11), sin(a11));\n\tfloat p00 = dot(v00, f);\n\tfloat p01 = dot(v01, f - vec2(0.0, 1.0));\n\tfloat p10 = dot(v10, f - vec2(1.0, 0.0));\n\tfloat p11 = dot(v11, f - vec2(1.0, 1.0));\n\tvec2 t =  f * f * f * (f * (f * 6.0 - 15.0) + 10.0);\n\treturn 0.5 + mix(mix(p00, p10, t.x), mix(p01, p11, t.x), t.y);\n}\n\nfloat fbm_perlinabs(vec2 coord, vec2 size, float offset, float seed) {\n\treturn abs(2.0*fbm_perlin(coord, size, offset, seed)-1.0);\n}\n\nfloat mod289(float x) {\n    return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\n\nfloat permute(float x) {\n    return mod289(((x * 34.0) + 1.0) * x);\n}\n\nvec2 rgrad2(vec2 p, float rot, float seed) {\n\tfloat u = permute(permute(p.x) + p.y) * 0.0243902439 + rot; // Rotate by shift\n\tu = fract(u) * 6.28318530718; // 2*pi\n\treturn vec2(cos(u), sin(u));\n}\n\nfloat fbm_simplex(vec2 coord, vec2 size, float offset, float seed) {\n\tcoord *= 2.0; // needed for it to tile\n\tcoord += rand2(vec2(seed, 1.0-seed)) + size;\n\tsize *= 2.0; // needed for it to tile\n\tcoord.y += 0.001;\n    vec2 uv = vec2(coord.x + coord.y*0.5, coord.y);\n    vec2 i0 = floor(uv);\n    vec2 f0 = fract(uv);\n    vec2 i1 = (f0.x > f0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);\n    vec2 p0 = vec2(i0.x - i0.y * 0.5, i0.y);\n    vec2 p1 = vec2(p0.x + i1.x - i1.y * 0.5, p0.y + i1.y);\n    vec2 p2 = vec2(p0.x + 0.5, p0.y + 1.0);\n    i1 = i0 + i1;\n    vec2 i2 = i0 + vec2(1.0, 1.0);\n    vec2 d0 = coord - p0;\n    vec2 d1 = coord - p1;\n    vec2 d2 = coord - p2;\n    vec3 xw = mod(vec3(p0.x, p1.x, p2.x), size.x);\n    vec3 yw = mod(vec3(p0.y, p1.y, p2.y), size.y);\n    vec3 iuw = xw + 0.5 * yw;\n    vec3 ivw = yw;\n    vec2 g0 = rgrad2(vec2(iuw.x, ivw.x), offset, seed);\n    vec2 g1 = rgrad2(vec2(iuw.y, ivw.y), offset, seed);\n    vec2 g2 = rgrad2(vec2(iuw.z, ivw.z), offset, seed);\n    vec3 w = vec3(dot(g0, d0), dot(g1, d1), dot(g2, d2));\n    vec3 t = 0.8 - vec3(dot(d0, d0), dot(d1, d1), dot(d2, d2));\n    t = max(t, vec3(0.0));\n    vec3 t2 = t * t;\n    vec3 t4 = t2 * t2;\n    float n = dot(t4, w);\n    return 0.5 + 5.5 * n;\n}\n\nfloat fbm_cellular(vec2 coord, vec2 size, float offset, float seed) {\n\tvec2 o = floor(coord)+rand2(vec2(seed, 1.0-seed))+size;\n\tvec2 f = fract(coord);\n\tfloat min_dist = 2.0;\n\tfor(float x = -1.0; x <= 1.0; x++) {\n\t\tfor(float y = -1.0; y <= 1.0; y++) {\n\t\t\tvec2 neighbor = vec2(float(x),float(y));\n\t\t\tvec2 node = rand2(mod(o + vec2(x, y), size)) + vec2(x, y);\n\t\t\tnode =  0.5 + 0.25 * sin(offset * 6.28318530718 + 6.28318530718 * node);\n\t\t\tvec2 diff = neighbor + node - f;\n\t\t\tfloat dist = length(diff);\n\t\t\tmin_dist = min(min_dist, dist);\n\t\t}\n\t}\n\treturn min_dist;\n}\n\nfloat fbm_cellular2(vec2 coord, vec2 size, float offset, float seed) {\n\tvec2 o = floor(coord)+rand2(vec2(seed, 1.0-seed))+size;\n\tvec2 f = fract(coord);\n\tfloat min_dist1 = 2.0;\n\tfloat min_dist2 = 2.0;\n\tfor(float x = -1.0; x <= 1.0; x++) {\n\t\tfor(float y = -1.0; y <= 1.0; y++) {\n\t\t\tvec2 neighbor = vec2(float(x),float(y));\n\t\t\tvec2 node = rand2(mod(o + vec2(x, y), size)) + vec2(x, y);\n\t\t\tnode = 0.5 + 0.25 * sin(offset * 6.28318530718 + 6.28318530718*node);\n\t\t\tvec2 diff = neighbor + node - f;\n\t\t\tfloat dist = length(diff);\n\t\t\tif (min_dist1 > dist) {\n\t\t\t\tmin_dist2 = min_dist1;\n\t\t\t\tmin_dist1 = dist;\n\t\t\t} else if (min_dist2 > dist) {\n\t\t\t\tmin_dist2 = dist;\n\t\t\t}\n\t\t}\n\t}\n\treturn min_dist2-min_dist1;\n}\n\nfloat fbm_cellular3(vec2 coord, vec2 size, float offset, float seed) {\n\tvec2 o = floor(coord)+rand2(vec2(seed, 1.0-seed))+size;\n\tvec2 f = fract(coord);\n\tfloat min_dist = 2.0;\n\tfor(float x = -1.0; x <= 1.0; x++) {\n\t\tfor(float y = -1.0; y <= 1.0; y++) {\n\t\t\tvec2 neighbor = vec2(float(x),float(y));\n\t\t\tvec2 node = rand2(mod(o + vec2(x, y), size)) + vec2(x, y);\n\t\t\tnode = 0.5 + 0.25 * sin(offset * 6.28318530718 + 6.28318530718*node);\n\t\t\tvec2 diff = neighbor + node - f;\n\t\t\tfloat dist = abs((diff).x) + abs((diff).y);\n\t\t\tmin_dist = min(min_dist, dist);\n\t\t}\n\t}\n\treturn min_dist;\n}\n\nfloat fbm_cellular4(vec2 coord, vec2 size, float offset, float seed) {\n\tvec2 o = floor(coord)+rand2(vec2(seed, 1.0-seed))+size;\n\tvec2 f = fract(coord);\n\tfloat min_dist1 = 2.0;\n\tfloat min_dist2 = 2.0;\n\tfor(float x = -1.0; x <= 1.0; x++) {\n\t\tfor(float y = -1.0; y <= 1.0; y++) {\n\t\t\tvec2 neighbor = vec2(float(x),float(y));\n\t\t\tvec2 node = rand2(mod(o + vec2(x, y), size)) + vec2(x, y);\n\t\t\tnode = 0.5 + 0.25 * sin(offset * 6.28318530718 + 6.28318530718*node);\n\t\t\tvec2 diff = neighbor + node - f;\n\t\t\tfloat dist = abs((diff).x) + abs((diff).y);\n\t\t\tif (min_dist1 > dist) {\n\t\t\t\tmin_dist2 = min_dist1;\n\t\t\t\tmin_dist1 = dist;\n\t\t\t} else if (min_dist2 > dist) {\n\t\t\t\tmin_dist2 = dist;\n\t\t\t}\n\t\t}\n\t}\n\treturn min_dist2-min_dist1;\n}\n\nfloat fbm_cellular5(vec2 coord, vec2 size, float offset, float seed) {\n\tvec2 o = floor(coord)+rand2(vec2(seed, 1.0-seed))+size;\n\tvec2 f = fract(coord);\n\tfloat min_dist = 2.0;\n\tfor(float x = -1.0; x <= 1.0; x++) {\n\t\tfor(float y = -1.0; y <= 1.0; y++) {\n\t\t\tvec2 neighbor = vec2(float(x),float(y));\n\t\t\tvec2 node = rand2(mod(o + vec2(x, y), size)) + vec2(x, y);\n\t\t\tnode = 0.5 + 0.5 * sin(offset * 6.28318530718 + 6.28318530718*node);\n\t\t\tvec2 diff = neighbor + node - f;\n\t\t\tfloat dist = max(abs((diff).x), abs((diff).y));\n\t\t\tmin_dist = min(min_dist, dist);\n\t\t}\n\t}\n\treturn min_dist;\n}\n\nfloat fbm_cellular6(vec2 coord, vec2 size, float offset, float seed) {\n\tvec2 o = floor(coord)+rand2(vec2(seed, 1.0-seed))+size;\n\tvec2 f = fract(coord);\n\tfloat min_dist1 = 2.0;\n\tfloat min_dist2 = 2.0;\n\tfor(float x = -1.0; x <= 1.0; x++) {\n\t\tfor(float y = -1.0; y <= 1.0; y++) {\n\t\t\tvec2 neighbor = vec2(float(x),float(y));\n\t\t\tvec2 node = rand2(mod(o + vec2(x, y), size)) + vec2(x, y);\n\t\t\tnode = 0.5 + 0.25 * sin(offset * 6.28318530718 + 6.28318530718*node);\n\t\t\tvec2 diff = neighbor + node - f;\n\t\t\tfloat dist = max(abs((diff).x), abs((diff).y));\n\t\t\tif (min_dist1 > dist) {\n\t\t\t\tmin_dist2 = min_dist1;\n\t\t\t\tmin_dist1 = dist;\n\t\t\t} else if (min_dist2 > dist) {\n\t\t\t\tmin_dist2 = dist;\n\t\t\t}\n\t\t}\n\t}\n\treturn min_dist2-min_dist1;\n}\n\n// MIT License Inigo Quilez - https://www.shadertoy.com/view/Xd23Dh\nfloat fbm_voronoise( vec2 coord, vec2 size, float offset, float seed) {\n    vec2 i = floor(coord) + rand2(vec2(seed, 1.0-seed)) + size;\n    vec2 f = fract(coord);\n    \n\tvec2 a = vec2(0.0);\n\t\n    for( int y=-2; y<=2; y++ ) {\n    \tfor( int x=-2; x<=2; x++ ) {\n        \tvec2  g = vec2( float(x), float(y) );\n\t\t\tvec3  o = rand3( mod(i + g, size) + vec2(seed) );\n\t\t\to.xy += 0.25 * sin(offset * 6.28318530718 + 6.28318530718*o.xy);\n\t\t\tvec2  d = g - f + o.xy;\n\t\t\tfloat w = pow( 1.0-smoothstep(0.0, 1.414, length(d)), 1.0 );\n\t\t\ta += vec2(o.z*w,w);\n\t\t}\n    }\n\t\n    return a.x/a.y;\n}",
+						"inputs": [
+							{
+								"default": "$offset",
+								"label": "7:",
+								"longdesc": "An optional input to drive the offset",
+								"name": "offset_in",
+								"shortdesc": "Offset Input",
+								"type": "f"
+							}
+						],
+						"instance": "float $(name)_fbm(vec2 coord, vec2 size, int folds, int octaves, float persistence, float offset, float seed) {\n\tfloat normalize_factor = 0.0;\n\tfloat value = 0.0;\n\tfloat scale = 1.0;\n\tfor (int i = 0; i < octaves; i++) {\n\t\tfloat noise = fbm_$noise(coord*size, size, offset, seed);\n\t\tfor (int f = 0; f < folds; ++f) {\n\t\t\tnoise = abs(2.0*noise-1.0);\n\t\t}\n\t\tvalue += noise * scale;\n\t\tnormalize_factor += scale;\n\t\tsize *= 2.0;\n\t\tscale *= persistence;\n\t}\n\treturn value / normalize_factor;\n}\n",
+						"longdesc": "Generates a noise made of several octaves of a simple noise",
+						"name": "CloudNoise",
+						"outputs": [
+							{
+								"f": "$(name)_fbm($(uv), vec2($(scale_x), $(scale_y)), int($(folds)), int($(iterations)), $(persistence), $offset_in($uv), $(seed))",
+								"longdesc": "Shows a greyscale image of the generated noise",
+								"shortdesc": "Output",
+								"type": "f"
+							}
+						],
+						"parameters": [
+							{
+								"default": 2,
+								"label": "Noise",
+								"longdesc": "The simple noise type",
+								"name": "noise",
+								"shortdesc": "Noise type",
+								"type": "enum",
+								"values": [
+									{
+										"name": "Value",
+										"value": "value"
+									},
+									{
+										"name": "Perlin",
+										"value": "perlin"
+									},
+									{
+										"name": "Simplex",
+										"value": "simplex"
+									},
+									{
+										"name": "Cellular",
+										"value": "cellular"
+									},
+									{
+										"name": "Cellular2",
+										"value": "cellular2"
+									},
+									{
+										"name": "Cellular3",
+										"value": "cellular3"
+									},
+									{
+										"name": "Cellular4",
+										"value": "cellular4"
+									},
+									{
+										"name": "Cellular5",
+										"value": "cellular5"
+									},
+									{
+										"name": "Cellular6",
+										"value": "cellular6"
+									},
+									{
+										"name": "Voronoise",
+										"value": "voronoise"
+									}
+								]
+							},
+							{
+								"control": "None",
+								"default": 4,
+								"label": "Scale X",
+								"longdesc": "The scale of the first octave along the X axis",
+								"max": 32,
+								"min": 1,
+								"name": "scale_x",
+								"shortdesc": "Scale.x",
+								"step": 1,
+								"type": "float"
+							},
+							{
+								"control": "None",
+								"default": 4,
+								"label": "Scale Y",
+								"longdesc": "The scale of the first octave along the Y axis",
+								"max": 32,
+								"min": 1,
+								"name": "scale_y",
+								"shortdesc": "Scale.y",
+								"step": 1,
+								"type": "float"
+							},
+							{
+								"control": "None",
+								"default": 0,
+								"label": "Folds",
+								"longdesc": "The number of times the basic noise is folded",
+								"max": 5,
+								"min": 0,
+								"name": "folds",
+								"shortdesc": "Folds",
+								"step": 1,
+								"type": "float"
+							},
+							{
+								"control": "None",
+								"default": 3,
+								"label": "Iterations",
+								"longdesc": "The number of noise octaves",
+								"max": 10,
+								"min": 1,
+								"name": "iterations",
+								"shortdesc": "Octaves",
+								"step": 1,
+								"type": "float"
+							},
+							{
+								"control": "None",
+								"default": 0.5,
+								"label": "Persistence",
+								"longdesc": "The persistence between two consecutive octaves",
+								"max": 1,
+								"min": 0,
+								"name": "persistence",
+								"shortdesc": "Persistence",
+								"step": 0.01,
+								"type": "float"
+							},
+							{
+								"control": "None",
+								"default": 0,
+								"label": "Offset",
+								"longdesc": "Offsets the points of the noise, can be used to animate the noise with \"$time\"",
+								"max": 1,
+								"min": 0,
+								"name": "offset",
+								"shortdesc": "Offset",
+								"step": 0.01,
+								"type": "float"
+							}
+						],
+						"shortdesc": "Fractional Brownian Motion Noise"
+					},
+					"type": "shader"
+				},
+				{
+					"name": "scale",
+					"node_position": {
+						"x": -697,
+						"y": 66.5
+					},
+					"parameters": {
+						"cx": 0.185,
+						"cy": -0.05,
+						"scale_x": 1.87,
+						"scale_y": 1.18
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "scale"
+				},
+				{
+					"name": "colorize",
+					"node_position": {
+						"x": -445,
+						"y": 66
+					},
+					"parameters": {
+						"gradient": {
+							"interpolation": 1,
+							"points": [
+								{
+									"a": 1,
+									"b": 1,
+									"g": 1,
+									"pos": 0.062364,
+									"r": 1
+								},
+								{
+									"a": 1,
+									"b": 0.675781,
+									"g": 0.617706,
+									"pos": 0.226,
+									"r": 0.634494
+								},
+								{
+									"a": 1,
+									"b": 0.058594,
+									"g": 0.027924,
+									"pos": 0.407818,
+									"r": 0.038227
+								},
+								{
+									"a": 1,
+									"b": 0.234375,
+									"g": 0.03479,
+									"pos": 0.981818,
+									"r": 0.092483
+								}
+							],
+							"type": "Gradient"
+						}
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "colorize"
+				},
+				{
+					"name": "translate",
+					"node_position": {
+						"x": -986,
+						"y": 75
+					},
+					"parameters": {
+						"translate_x": "$time*0.01",
+						"translate_y": -0.005
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"shader_model": {
+						"code": "",
+						"global": "",
+						"inputs": [
+							{
+								"default": "vec4($uv, 0.0, 1.0)",
+								"label": "",
+								"longdesc": "The input image",
+								"name": "i",
+								"shortdesc": "Input",
+								"type": "rgba"
+							}
+						],
+						"instance": "",
+						"longdesc": "Translates its input",
+						"name": "Cloud_Speed",
+						"outputs": [
+							{
+								"longdesc": "Shows the translated image",
+								"rgba": "$i($uv-vec2($translate_x, $translate_y))",
+								"shortdesc": "Output",
+								"type": "rgba"
+							}
+						],
+						"parameters": [
+							{
+								"control": "P1.x",
+								"default": 0,
+								"label": "Cloud_Speed_X",
+								"longdesc": "The translation along the X axis",
+								"max": 1,
+								"min": -1,
+								"name": "translate_x",
+								"shortdesc": "Translate.x",
+								"step": 0.005,
+								"type": "float"
+							},
+							{
+								"control": "P1.y",
+								"default": 0,
+								"label": "Cloud_Speed_Y",
+								"longdesc": "The translation along the Y axis",
+								"max": 1,
+								"min": -1,
+								"name": "translate_y",
+								"shortdesc": "Translate.y",
+								"step": 0.005,
+								"type": "float"
+							}
+						],
+						"shortdesc": "Translate"
+					},
+					"type": "shader"
+				},
+				{
+					"name": "gen_inputs",
+					"node_position": {
+						"x": -1905.140015,
+						"y": 50.375999
+					},
+					"parameters": {
+
+					},
+					"ports": [
+
+					],
+					"seed": 0,
+					"seed_locked": false,
+					"type": "ios"
+				},
+				{
+					"name": "gen_outputs",
+					"node_position": {
+						"x": -145,
+						"y": 50.375999
+					},
+					"parameters": {
+
+					},
+					"ports": [
+						{
+							"name": "port0",
+							"type": "rgba"
+						}
+					],
+					"seed": 0,
+					"seed_locked": false,
+					"type": "ios"
+				},
+				{
+					"name": "gen_parameters",
+					"node_position": {
+						"x": -1131.656006,
+						"y": -407.059998
+					},
+					"parameters": {
+
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "remote",
+					"widgets": [
+
+					]
+				}
+			],
+			"parameters": {
+
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"shortdesc": "",
+			"type": "graph"
+		},
+		{
+			"connections": [
+				{
+					"from": "splatter",
+					"from_port": 0,
+					"to": "gen_outputs",
+					"to_port": 0
+				},
+				{
+					"from": "shape",
+					"from_port": 0,
+					"to": "splatter",
+					"to_port": 0
+				},
+				{
+					"from": "shape_4",
+					"from_port": 0,
+					"to": "splatter_2",
+					"to_port": 0
+				},
+				{
+					"from": "fbm2",
+					"from_port": 0,
+					"to": "math_5",
+					"to_port": 0
+				},
+				{
+					"from": "splatter_2",
+					"from_port": 0,
+					"to": "math_5",
+					"to_port": 1
+				}
+			],
+			"label": "Stars",
+			"longdesc": "",
+			"name": "graph_3",
+			"node_position": {
+				"x": -339,
+				"y": 448.642883
+			},
+			"nodes": [
+				{
+					"name": "smooth_minmax",
+					"node_position": {
+						"x": -1194,
+						"y": 642.5
+					},
+					"parameters": {
+						"clamp": false,
+						"default_in1": 0,
+						"default_in2": 0,
+						"k": 0,
+						"op": 0
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "smooth_minmax"
+				},
+				{
+					"name": "math_5",
+					"node_position": {
+						"x": -1159,
+						"y": 448.5
+					},
+					"parameters": {
+						"clamp": false,
+						"default_in1": 0,
+						"default_in2": 0,
+						"op": 2
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "math"
+				},
+				{
+					"name": "shape_4",
+					"node_position": {
+						"x": -1712,
+						"y": 539.5
+					},
+					"parameters": {
+						"edge": 0.08,
+						"radius": 0.14,
+						"shape": 0,
+						"sides": 11
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "shape"
+				},
+				{
+					"name": "splatter_2",
+					"node_position": {
+						"x": -1506,
+						"y": 521
+					},
+					"parameters": {
+						"count": 3,
+						"inputs": 0,
+						"rotate": 0,
+						"scale": 0,
+						"scale_x": 0.96,
+						"scale_y": 0.91,
+						"value": 0,
+						"variations": false
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "splatter"
+				},
+				{
+					"name": "shape",
+					"node_position": {
+						"x": -867,
+						"y": 638
+					},
+					"parameters": {
+						"edge": 0.04,
+						"radius": 0.01,
+						"shape": 2,
+						"sides": 5
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "shape"
+				},
+				{
+					"name": "fbm2",
+					"node_position": {
+						"x": -1793,
+						"y": 260
+					},
+					"parameters": {
+						"folds": 0,
+						"iterations": 6,
+						"noise": 2,
+						"offset": 0.11,
+						"persistence": 0.46,
+						"scale_x": 1,
+						"scale_y": 1
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "fbm2"
+				},
+				{
+					"name": "splatter",
+					"node_position": {
+						"x": -694,
+						"y": 539
+					},
+					"parameters": {
+						"count": 25,
+						"inputs": 0,
+						"rotate": 39,
+						"scale": "0.3*sin($time)",
+						"scale_x": 0.37,
+						"scale_y": 0.31,
+						"value": 0.52,
+						"variations": false
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "splatter"
+				},
+				{
+					"name": "gen_inputs",
+					"node_position": {
+						"x": -2293,
+						"y": 512.642883
+					},
+					"parameters": {
+
+					},
+					"ports": [
+
+					],
+					"seed": 0,
+					"seed_locked": false,
+					"type": "ios"
+				},
+				{
+					"name": "gen_outputs",
+					"node_position": {
+						"x": -394,
+						"y": 512.642883
+					},
+					"parameters": {
+
+					},
+					"ports": [
+						{
+							"name": "port0",
+							"type": "f"
+						}
+					],
+					"seed": 0,
+					"seed_locked": false,
+					"type": "ios"
+				},
+				{
+					"name": "gen_parameters",
+					"node_position": {
+						"x": -1475,
+						"y": -40
+					},
+					"parameters": {
+
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "remote",
+					"widgets": [
+
+					]
+				}
+			],
+			"parameters": {
+
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"shortdesc": "",
+			"type": "graph"
+		},
+		{
+			"connections": [
+				{
+					"from": "gradient",
+					"from_port": 0,
+					"to": "rotate",
+					"to_port": 0
+				},
+				{
+					"from": "rotate",
+					"from_port": 0,
+					"to": "gen_outputs",
+					"to_port": 0
+				}
+			],
+			"label": "Cloud_Gradient",
+			"longdesc": "",
+			"name": "graph_4",
+			"node_position": {
+				"x": 240,
+				"y": 44.5
+			},
+			"nodes": [
+				{
+					"name": "rotate",
+					"node_position": {
+						"x": 392,
+						"y": 62.5
+					},
+					"parameters": {
+						"cx": 0,
+						"cy": 0,
+						"rotate": -90
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "rotate"
+				},
+				{
+					"name": "gradient",
+					"node_position": {
+						"x": 88,
+						"y": 26.5
+					},
+					"parameters": {
+						"gradient": {
+							"interpolation": 1,
+							"points": [
+								{
+									"a": 1,
+									"b": 0.066406,
+									"g": 0.005447,
+									"pos": 0,
+									"r": 0.015925
+								},
+								{
+									"a": 1,
+									"b": 0.433594,
+									"g": 0.025406,
+									"pos": 1,
+									"r": 0.095563
+								}
+							],
+							"type": "Gradient"
+						},
+						"repeat": 1,
+						"rotate": 0
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "gradient"
+				},
+				{
+					"name": "gen_inputs",
+					"node_position": {
+						"x": -412,
+						"y": 44.5
+					},
+					"parameters": {
+
+					},
+					"ports": [
+
+					],
+					"seed": 0,
+					"seed_locked": false,
+					"type": "ios"
+				},
+				{
+					"name": "gen_outputs",
+					"node_position": {
+						"x": 692,
+						"y": 44.5
+					},
+					"parameters": {
+
+					},
+					"ports": [
+						{
+							"name": "port0",
+							"type": "rgba"
+						}
+					],
+					"seed": 0,
+					"seed_locked": false,
+					"type": "ios"
+				},
+				{
+					"name": "gen_parameters",
+					"node_position": {
+						"x": 40,
+						"y": -273.5
+					},
+					"parameters": {
+
+					},
+					"seed": 0,
+					"seed_locked": false,
+					"type": "remote",
+					"widgets": [
+
+					]
+				}
+			],
+			"parameters": {
+
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"shortdesc": "",
+			"type": "graph"
+		}
+	],
+	"parameters": {
+
+	},
+	"seed": 0,
+	"seed_locked": false,
+	"shortdesc": "",
+	"type": "graph"
+}
